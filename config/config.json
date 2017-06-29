@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "rebekkahporter",
+    "password": null,
+    "database": "todos",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "rebekkahporter",
+    "password": null,
+    "database": "todos",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "rebekkahporter",
+    "password": null,
+    "database": "todos",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

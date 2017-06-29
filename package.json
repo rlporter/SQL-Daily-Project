@@ -1,0 +1,26 @@
+{
+  "name": "sql_activity",
+  "version": "1.0.0",
+  "description": "In week 1 of Back-End Fundamentals, you built a todo list, storing your data in memory.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pg": "^6.4.0",
+    "sequelize": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlporter/SQL-Daily-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rlporter/SQL-Daily-Project/issues"
+  },
+  "homepage": "https://github.com/rlporter/SQL-Daily-Project#readme"
+}

@@ -34,7 +34,7 @@ app.post("/", function (req, res) {
 app.post("/complete", function (req, res) {
   let completed = req.body.markComplete;
   function findTodo(item){
-    return item.todo === completed;
+    return item.todo === completed;_
   list.find(findTodo).stillToDo = false;
   }
   res.redirect('/');

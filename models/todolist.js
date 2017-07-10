@@ -2,7 +2,7 @@
 
 module.exports = function(sequelize, DataTypes) {
   var TodoList = sequelize.define('TodoList', {
-    // id: DataTypes.UUIDV4,
+    id: DataTypes.UUID,
     title: DataTypes.STRING,
     details: DataTypes.TEXT,
     priority: DataTypes.INTEGER,

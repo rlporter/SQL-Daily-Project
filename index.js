@@ -7,13 +7,14 @@ const todoRouter = require('./routes/todo');
 router.get("/", function (req, res) {
     res.redirect("/");
 })
+//read todos
 
-models.todolist.findAll().then(function (todo) {
+models.list.findAll().then(function (todo) {
   console.log(todo);
 })
 
 //use Sequelize to store your todos
-let todo = models.Todo.create({
+let todo = models.addTodo.create({
   title: req.param.title,
   details: req.param.details,
   created_at: new Date(),
@@ -24,8 +25,9 @@ let todo = models.Todo.create({
 
 //edit
 todolist.findbyID.update({
-  title: req.param.title,
-  details: req.param.details,
+  title: req.params.title,
+  details: req.params.details,
+  priority: req.params.priority,
   created_at: new Date(),
   completed_at: new Date()
 }).then(function (todo){
@@ -36,7 +38,7 @@ todolist.findbyID.update({
 //delete
 todolist.findbyID.destroy({
   where: {
-    completed_at: isNotEmpty,
+    completed_at: req.param.stillToDo.isNotEmpty,
   }
 }).then(function(){
   alert("Completed task deleted!")
